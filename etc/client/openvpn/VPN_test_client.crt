@@ -1,0 +1,97 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 3 (0x3)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=JP, ST=SAITAMA, L=FUJIMINO, O=Oz, OU=onlyOne, CN=Oz CA/name=EasyRSA/emailAddress=me@myhost.mydomain
+        Validity
+            Not Before: Jul 20 13:14:26 2016 GMT
+            Not After : Jul 18 13:14:26 2026 GMT
+        Subject: C=JP, ST=SAITAMA, L=FUJIMINO, O=Oz, OU=onlyOne, CN=VPN_test_client/name=EasyRSA/emailAddress=me@myhost.mydomain
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:d4:0f:de:91:ec:60:98:7a:e4:76:f7:de:ca:f7:
+                    40:77:8a:a6:8e:42:dd:76:d9:71:d7:b6:88:e6:87:
+                    a7:af:e4:0b:dc:b1:23:77:fd:86:dd:50:ae:8b:3b:
+                    52:69:f2:43:5a:4d:64:a3:78:25:36:f2:89:66:72:
+                    54:09:73:18:43:42:97:35:1e:28:39:6b:04:3a:93:
+                    dd:7a:bc:8a:82:51:58:4a:ab:c0:b5:2a:91:da:8b:
+                    4a:e5:9c:a4:22:9f:12:db:43:73:44:73:b6:a0:7b:
+                    59:4b:2c:a5:c7:53:5c:5b:02:ca:92:f4:6f:b7:15:
+                    69:8b:cc:59:f9:2a:a5:81:28:69:92:8c:89:5f:76:
+                    f9:4a:b2:f6:9e:76:ab:17:1f:c5:19:7b:c7:b4:57:
+                    fc:33:10:e3:b5:80:6d:de:c3:ee:05:ed:dd:ce:da:
+                    8d:08:54:f3:01:d7:10:af:ab:e0:68:f4:85:51:4e:
+                    78:e2:d9:c6:34:47:6b:cc:86:f3:d5:c3:43:9b:b7:
+                    56:55:2c:74:c3:ed:92:a5:0a:0e:99:b4:d8:2b:3f:
+                    1a:ec:3c:89:c0:89:c7:57:27:5b:3f:7d:c1:df:96:
+                    53:2b:ea:01:fd:18:4b:fe:cd:00:0b:5b:8c:2a:33:
+                    d6:f0:45:50:03:8c:c3:ce:10:dd:c5:ec:d8:5b:11:
+                    03:43
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                16:4E:60:F6:68:CB:A6:C2:B2:C6:F7:CC:AA:D8:5D:72:CB:1B:5E:BB
+            X509v3 Authority Key Identifier: 
+                keyid:80:84:9F:D0:30:F1:74:D2:63:87:5D:93:95:2D:91:38:4C:01:6D:04
+                DirName:/C=JP/ST=SAITAMA/L=FUJIMINO/O=Oz/OU=onlyOne/CN=Oz CA/name=EasyRSA/emailAddress=me@myhost.mydomain
+                serial:C3:F5:2E:8D:9B:40:B9:AD
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+            X509v3 Subject Alternative Name: 
+                DNS:VPN_test_client
+    Signature Algorithm: sha256WithRSAEncryption
+         31:86:20:2a:7f:7b:a0:9e:ca:df:d4:3d:b4:a7:33:64:e1:12:
+         c7:ae:c6:bc:10:d8:51:6f:4f:ea:62:97:76:e2:a1:ee:a4:bf:
+         6f:0d:07:7f:96:4e:0d:4c:d4:67:9a:87:b3:f5:e4:dd:42:b3:
+         9b:05:83:87:36:db:c1:3f:c4:1d:e3:86:94:ec:bd:9c:b9:bf:
+         23:0f:e5:1e:40:db:89:74:31:84:e4:1a:5b:e2:cd:23:33:a3:
+         7e:f3:48:e6:73:65:c3:37:54:f3:75:2a:60:3e:d7:cf:31:2b:
+         18:e5:12:ce:4c:a6:56:ea:ef:2b:fa:83:66:2e:63:72:48:b4:
+         d6:73:6d:64:06:26:57:52:50:82:17:d1:2e:9d:71:0d:d5:6d:
+         78:aa:fb:36:26:22:b7:41:f0:8b:62:0e:4e:ce:6f:15:82:3a:
+         85:7f:ff:b7:97:9a:56:15:2e:32:5a:a8:9e:3e:78:45:97:85:
+         c1:7d:e6:9a:8f:5e:af:6e:8a:11:34:95:a3:dc:32:da:d1:8a:
+         6f:fd:3b:77:c1:e6:c4:87:49:11:25:71:72:10:9e:8f:93:57:
+         82:60:21:e6:8a:cb:02:71:6c:d4:3f:5d:b7:95:d4:b7:cb:f7:
+         dc:33:7f:36:b5:43:0d:34:fa:a6:94:d7:9f:79:07:37:87:57:
+         5f:8c:df:eb
+-----BEGIN CERTIFICATE-----
+MIIFHjCCBAagAwIBAgIBAzANBgkqhkiG9w0BAQsFADCBljELMAkGA1UEBhMCSlAx
+EDAOBgNVBAgTB1NBSVRBTUExETAPBgNVBAcTCEZVSklNSU5PMQswCQYDVQQKEwJP
+ejEQMA4GA1UECxMHb25seU9uZTEOMAwGA1UEAxMFT3ogQ0ExEDAOBgNVBCkTB0Vh
+c3lSU0ExITAfBgkqhkiG9w0BCQEWEm1lQG15aG9zdC5teWRvbWFpbjAeFw0xNjA3
+MjAxMzE0MjZaFw0yNjA3MTgxMzE0MjZaMIGgMQswCQYDVQQGEwJKUDEQMA4GA1UE
+CBMHU0FJVEFNQTERMA8GA1UEBxMIRlVKSU1JTk8xCzAJBgNVBAoTAk96MRAwDgYD
+VQQLEwdvbmx5T25lMRgwFgYDVQQDFA9WUE5fdGVzdF9jbGllbnQxEDAOBgNVBCkT
+B0Vhc3lSU0ExITAfBgkqhkiG9w0BCQEWEm1lQG15aG9zdC5teWRvbWFpbjCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANQP3pHsYJh65Hb33sr3QHeKpo5C
+3XbZcde2iOaHp6/kC9yxI3f9ht1Qros7UmnyQ1pNZKN4JTbyiWZyVAlzGENClzUe
+KDlrBDqT3Xq8ioJRWEqrwLUqkdqLSuWcpCKfEttDc0RztqB7WUsspcdTXFsCypL0
+b7cVaYvMWfkqpYEoaZKMiV92+Uqy9p52qxcfxRl7x7RX/DMQ47WAbd7D7gXt3c7a
+jQhU8wHXEK+r4Gj0hVFOeOLZxjRHa8yG89XDQ5u3VlUsdMPtkqUKDpm02Cs/Guw8
+icCJx1cnWz99wd+WUyvqAf0YS/7NAAtbjCoz1vBFUAOMw84Q3cXs2FsRA0MCAwEA
+AaOCAWkwggFlMAkGA1UdEwQCMAAwLQYJYIZIAYb4QgENBCAWHkVhc3ktUlNBIEdl
+bmVyYXRlZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUFk5g9mjLpsKyxvfMqthdcssb
+XrswgcsGA1UdIwSBwzCBwIAUgISf0DDxdNJjh12TlS2ROEwBbQShgZykgZkwgZYx
+CzAJBgNVBAYTAkpQMRAwDgYDVQQIEwdTQUlUQU1BMREwDwYDVQQHEwhGVUpJTUlO
+TzELMAkGA1UEChMCT3oxEDAOBgNVBAsTB29ubHlPbmUxDjAMBgNVBAMTBU96IENB
+MRAwDgYDVQQpEwdFYXN5UlNBMSEwHwYJKoZIhvcNAQkBFhJtZUBteWhvc3QubXlk
+b21haW6CCQDD9S6Nm0C5rTATBgNVHSUEDDAKBggrBgEFBQcDAjALBgNVHQ8EBAMC
+B4AwGgYDVR0RBBMwEYIPVlBOX3Rlc3RfY2xpZW50MA0GCSqGSIb3DQEBCwUAA4IB
+AQAxhiAqf3ugnsrf1D20pzNk4RLHrsa8ENhRb0/qYpd24qHupL9vDQd/lk4NTNRn
+moez9eTdQrObBYOHNtvBP8Qd44aU7L2cub8jD+UeQNuJdDGE5Bpb4s0jM6N+80jm
+c2XDN1TzdSpgPtfPMSsY5RLOTKZW6u8r+oNmLmNySLTWc21kBiZXUlCCF9EunXEN
+1W14qvs2JiK3QfCLYg5Ozm8VgjqFf/+3l5pWFS4yWqiePnhFl4XBfeaaj16vbooR
+NJWj3DLa0Ypv/Tt3webEh0kRJXFyEJ6Pk1eCYCHmissCcWzUP123ldS3y/fcM382
+tUMNNPqmlNefeQc3h1dfjN/r
+-----END CERTIFICATE-----
