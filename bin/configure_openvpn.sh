@@ -5,6 +5,7 @@ pwd=`pwd`
 cd `dirname $0`
 
 SERVER_CONF=../etc/openvpn/server.conf
+UFW_CONF=../etc/ufw/before.rules
 CLIENT_CONF=../etc/client/openvpn/client.ovpn
 OPENVPN_DIR=/etc/openvpn
 
@@ -28,7 +29,7 @@ log_info_ "configure_openvpn.sh start"
 
 
 log_info_ "create $SERVER_CONF"
-#sed -i -e s/^server.*/"server $SERVER_RANGE $SERVER_NETMASK"/g $SERVER_CONF
+sed -i -e s/^server.*/"server $SERVER_RANGE $SERVER_NETMASK"/g $SERVER_CONF
 sed -i -e /".*dhcp-option DNS.*"/d $SERVER_CONF
 echo "push dhcp-option DNS $DNS1" >> $SERVER_CONF
 echo "push dhcp-option DNS $DNS2" >> $SERVER_CONF
@@ -38,6 +39,14 @@ if [ -e $OPENVPN_DIR/server.conf ];then
 	sudo mv $OPENVPN_DIR/server.conf $OPENVPN_DIR/server.conf.backup
 fi
 sudo cp $SERVER_CONF $OPENVPN_DIR
+
+log_info_ "deploy UFW_CONF"
+if [ -e /etc/ufw/before.rules ];then
+	sudo mv /etc/ufw/before.rules /etc/ufw/before.rules.backup
+fi
+sudo cp $UFW_CONF /etc/ufw/before.rules
+
+
 
 
 
