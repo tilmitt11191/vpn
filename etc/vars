@@ -62,8 +62,8 @@ export KEY_EXPIRE=3650
 # which will be placed in the certificate.
 # Don't leave any of these fields blank.
 export KEY_COUNTRY="JP"
-export KEY_PROVINCE="SAITAMA"
-export KEY_CITY="FUJIMINO"
+export KEY_PROVINCE="TOKYO"
+export KEY_CITY="TOKYO"
 export KEY_ORG="Oz"
 export KEY_EMAIL="me@myhost.mydomain"
 export KEY_OU="onlyOne"
