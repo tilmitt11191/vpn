@@ -20,13 +20,6 @@
 # Comments are preceded with '#' or ';'         #
 #################################################
 
-mode server
-tls-server
-#tls-cipher DHE-RSA-AES256-SHA
-#cipher AES-256-CBC
-#keysize 256
-#auth SHA256
-
 # Which local IP address should OpenVPN
 # listen on? (optional)
 ;local a.b.c.d
@@ -39,8 +32,8 @@ tls-server
 port 1194
 
 # TCP or UDP server?
-proto tcp
-;proto udp
+;proto tcp
+proto udp
 
 # "dev tun" will create a routed IP tunnel,
 # "dev tap" will create an ethernet tunnel.
@@ -82,19 +75,14 @@ dev tun
 # Any X509 key management system can be used.
 # OpenVPN can also use a PKCS #12 formatted key file
 # (see "pkcs12" directive in man page).
-;ca ca.crt
-;cert server.crt
-;key server.key  # This file should be kept secret
-ca /etc/openvpn/easy-rsa/keys/ca.crt
-cert /etc/openvpn/easy-rsa/keys/VPN_test.crt
-key /etc/openvpn/easy-rsa/keys/VPN_test.key
-
+ca ca.crt
+cert server.crt
+key server.key  # This file should be kept secret
 
 # Diffie hellman parameters.
 # Generate your own with:
 #   openssl dhparam -out dh2048.pem 2048
-;dh dh2048.pem
-dh /etc/openvpn/easy-rsa/keys/dh2048.pem
+dh dh2048.pem
 
 # Network topology
 # Should be subnet (addressing via IP)
@@ -110,8 +98,7 @@ dh /etc/openvpn/easy-rsa/keys/dh2048.pem
 # Each client will be able to reach the server
 # on 10.8.0.1. Comment this line out if you are
 # ethernet bridging. See the man page for more info.
-;server 10.8.0.0 255.255.255.0
-server 192.168.230.0 255.255.255.0
+server 10.8.0.0 255.255.255.0
 
 # Maintain a record of client <-> virtual IP address
 # associations in this file.  If OpenVPN goes down or
@@ -153,9 +140,6 @@ ifconfig-pool-persist ipp.txt
 # back to the OpenVPN server.
 ;push "route 192.168.10.0 255.255.255.0"
 ;push "route 192.168.20.0 255.255.255.0"
-push "redirect-gateway def1"
-push dhcp-option DNS 8.8.8.8
-push dhcp-option DNS 8.8.4.4
 
 # To assign specific IP addresses to specific
 # clients or if a connecting client has a private
@@ -222,7 +206,7 @@ push dhcp-option DNS 8.8.4.4
 # To force clients to only see the server, you
 # will also need to appropriately firewall the
 # server's TUN/TAP interface.
-client-to-client
+;client-to-client
 
 # Uncomment this directive if multiple clients
 # might connect with the same certificate/key
@@ -235,7 +219,7 @@ client-to-client
 # CERTIFICATE/KEY PAIRS FOR EACH CLIENT,
 # EACH HAVING ITS OWN UNIQUE "COMMON NAME",
 # UNCOMMENT THIS LINE OUT.
-duplicate-cn
+;duplicate-cn
 
 # The keepalive directive causes ping-like
 # messages to be sent back and forth over
@@ -258,7 +242,6 @@ keepalive 10 120
 # The second parameter should be '0'
 # on the server and '1' on the clients.
 ;tls-auth ta.key 0 # This file is secret
-tls-auth /etc/openvpn/easy-rsa/ta.key 0
 
 # Select a cryptographic cipher.
 # This config item must be copied to
@@ -305,7 +288,6 @@ status openvpn-status.log
 # or the other (but not both).
 ;log         openvpn.log
 ;log-append  openvpn.log
-log-append /var/log/openvpn.log
 
 # Set the appropriate level of log
 # file verbosity.

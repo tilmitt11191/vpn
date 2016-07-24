@@ -1,3 +1,3 @@
 #!/bin/bash
-/sbin/route add -net 10.0.2.15 netmask 255.255.255.0
+/sbin/route add -net 192.168.230.0 netmask 255.255.255.0
 exit

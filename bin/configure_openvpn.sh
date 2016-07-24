@@ -11,7 +11,7 @@ OPENVPN_DIR=/etc/openvpn
 
 SERVER_IP=192.168.24.3
 SERVER_PORT=26262
-SERVER_RANGE=192.168.240.0
+SERVER_RANGE=192.168.230.0
 SERVER_NETMASK=255.255.255.0
 NIC=enp0s3
 DNS1=8.8.8.8
@@ -44,10 +44,8 @@ log_info_ "deploy UFW_CONF"
 if [ -e /etc/ufw/before.rules ];then
 	sudo mv /etc/ufw/before.rules /etc/ufw/before.rules.backup
 fi
+sed -i -e s/^"-A POSTROUTING -s ".*/"-A POSTROUTING -s $SERVER_RANGE\/$SERVER_NETMASK -o $NIC -j MASQUERADE"/g $UFW_CONF
 sudo cp $UFW_CONF /etc/ufw/before.rules
-
-
-
 
 
 log_info_ "create $CLIENT_CONF"
@@ -57,13 +55,13 @@ sed -i -e s/^key.*/"key $CLIENT_KEY_NAME"/g $CLIENT_CONF
 
 
 log_info_ "routing configuration"
-if [ -e /etc/iptables.rule ];then
-	sudo mv /etc/iptables.rule /etc/iptables.rule.backup
-fi
-sudo iptables -t nat -A POSTROUTING -s $SERVER_RANGE/$SERVER_NETMASK -o $NIC -j MASQUERADE
-sudo /sbin/iptables-save -c | sudo tee -a /etc/iptables.rule
+#if [ -e /etc/iptables.rule ];then
+#	sudo mv /etc/iptables.rule /etc/iptables.rule.backup
+#fi
+#sudo iptables -t nat -A POSTROUTING -s $SERVER_RANGE/$SERVER_NETMASK -o $NIC -j MASQUERADE
+#sudo /sbin/iptables-save -c | sudo tee -a /etc/iptables.rule
 
-#sed -i -e s@^/sbin/route.*@"/sbin/route add -net $SERVER_RANGE netmask $SERVER_NETMASK"@g ../etc/network/if-up.d/routes
+sed -i -e s@^/sbin/route.*@"/sbin/route add -net $SERVER_RANGE netmask $SERVER_NETMASK dev $NIC"@g ../etc/network/if-up.d/routes
 sudo cp ../etc/network/if-pre-up.d/iptables_restore /etc/network/if-pre-up.d/
 sudo chmod +x /etc/network/if-pre-up.d/iptables_restore
 sudo cp ../etc/network/if-up.d/routes /etc/network/if-up.d/

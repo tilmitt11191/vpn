@@ -5,31 +5,31 @@ Certificate:
     Signature Algorithm: sha256WithRSAEncryption
         Issuer: C=JP, ST=TOKYO, L=TOKYO, O=Oz, OU=onlyOne, CN=Oz CA/name=EasyRSA/emailAddress=me@myhost.mydomain
         Validity
-            Not Before: Jul 21 12:17:27 2016 GMT
-            Not After : Jul 19 12:17:27 2026 GMT
+            Not Before: Jul 24 08:01:08 2016 GMT
+            Not After : Jul 22 08:01:08 2026 GMT
         Subject: C=JP, ST=TOKYO, L=TOKYO, O=Oz, OU=onlyOne, CN=VPN_test_client/name=EasyRSA/emailAddress=me@myhost.mydomain
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
                 Public-Key: (2048 bit)
                 Modulus:
-                    00:de:41:3a:56:e7:f2:68:8f:0c:a5:0b:5d:9b:87:
-                    3a:43:c3:d8:f6:a3:4b:0e:ad:27:f0:32:19:08:a8:
-                    94:b3:01:f0:a3:b1:11:d2:c5:8c:77:e0:70:05:d0:
-                    7b:62:31:00:aa:bf:4b:c3:69:d1:fb:3c:54:59:71:
-                    96:83:94:41:83:27:65:cb:43:d0:70:d4:a5:0c:8b:
-                    18:73:a5:76:a0:84:f3:f0:2d:4e:20:ee:75:8f:76:
-                    85:3b:41:51:02:24:47:6b:62:25:cf:0c:f9:1e:69:
-                    14:7a:ed:a9:4d:dc:49:8e:71:6c:f1:30:e9:55:42:
-                    5b:b5:98:0d:4f:eb:ea:a7:32:15:b1:eb:c7:a3:f4:
-                    5b:96:83:53:49:97:7f:a8:d8:bf:7b:ca:53:64:a3:
-                    e4:d0:ff:7d:8c:98:68:30:38:38:40:50:8c:72:be:
-                    71:e3:7b:bb:e1:6a:82:41:49:16:ed:15:41:96:e9:
-                    40:ae:7b:5d:f6:b8:cd:ef:fe:0f:69:03:2c:31:5e:
-                    3e:ae:e9:06:17:af:ff:01:b3:af:4f:43:dd:61:46:
-                    27:77:06:7e:67:4e:70:1f:1f:fb:22:54:8a:d5:f7:
-                    6e:51:92:54:a6:34:4e:18:c2:c4:11:54:a6:d3:d3:
-                    8b:54:5d:7e:cb:48:dc:0f:4b:8c:fa:66:e5:d5:a1:
-                    bc:17
+                    00:a6:8f:ca:b3:99:42:49:be:4f:74:21:ea:fa:9d:
+                    56:27:13:59:0f:44:1b:54:aa:f5:40:cd:98:7a:97:
+                    fb:9a:20:aa:84:15:d5:05:39:22:cb:aa:03:fc:0a:
+                    62:e4:27:4a:0f:4d:a2:95:f1:ce:69:2a:89:8a:77:
+                    55:97:2f:e5:3a:3b:96:74:77:33:17:d6:1f:d1:d2:
+                    e9:5d:65:8f:24:db:73:a3:2d:7a:16:a5:13:93:a2:
+                    46:fd:83:87:2e:a1:eb:78:fb:dd:f1:f9:61:0d:19:
+                    cb:8f:3a:a0:86:b0:c6:d3:01:78:75:1a:7f:ac:1b:
+                    f7:e7:16:b4:7a:36:76:f3:58:f5:51:bb:d8:a0:63:
+                    02:35:ac:b2:75:92:df:a1:1c:ac:41:e0:09:6f:4b:
+                    85:91:2a:f1:95:e3:c5:c7:4c:9a:0a:bf:e6:79:29:
+                    4c:af:49:43:26:42:7b:a4:ed:81:dd:b1:35:53:5c:
+                    55:c0:af:4c:38:66:61:28:51:66:47:fc:75:28:d7:
+                    c5:85:64:63:79:5c:b4:64:ff:1d:76:1c:96:bb:90:
+                    c3:3e:59:02:7a:c9:f7:4c:81:05:f7:cb:52:dc:00:
+                    68:2d:eb:ee:5c:d3:8c:0f:f8:09:3e:e7:14:dc:f3:
+                    6d:b7:cf:0d:47:54:2d:1d:9e:ea:bf:2a:2d:a1:2f:
+                    db:85
                 Exponent: 65537 (0x10001)
         X509v3 extensions:
             X509v3 Basic Constraints: 
@@ -37,11 +37,11 @@ Certificate:
             Netscape Comment: 
                 Easy-RSA Generated Certificate
             X509v3 Subject Key Identifier: 
-                75:8B:73:8F:0E:81:CE:20:2F:47:20:9C:9E:F8:70:9F:A5:1B:F9:46
+                49:CF:0E:3B:A5:B3:2A:B4:81:A5:30:28:7D:8A:1B:EA:3F:D4:EF:76
             X509v3 Authority Key Identifier: 
-                keyid:35:BB:D6:1F:CB:6F:B7:00:7A:3B:FC:BD:43:21:A5:D2:51:E8:28:A0
+                keyid:38:37:7E:51:0F:D1:9A:55:9C:14:57:FC:6D:C0:E1:7B:7B:D0:25:9C
                 DirName:/C=JP/ST=TOKYO/L=TOKYO/O=Oz/OU=onlyOne/CN=Oz CA/name=EasyRSA/emailAddress=me@myhost.mydomain
-                serial:85:98:97:1D:94:2E:AF:E8
+                serial:BC:CA:1A:CD:A0:E2:2F:A4
 
             X509v3 Extended Key Usage: 
                 TLS Web Client Authentication
@@ -50,48 +50,48 @@ Certificate:
             X509v3 Subject Alternative Name: 
                 DNS:VPN_test_client
     Signature Algorithm: sha256WithRSAEncryption
-         08:a3:93:00:78:ef:b4:5f:b9:a2:b2:e9:5c:98:1e:e7:38:ee:
-         53:3c:62:61:34:df:30:52:0f:07:2f:6e:67:80:c8:1d:81:ef:
-         25:52:85:a0:47:7d:a1:3e:a0:5f:d3:02:b8:3e:40:eb:3c:b3:
-         b1:b0:07:a9:1a:bb:a1:4d:21:63:52:d9:68:f8:b0:70:5d:6c:
-         03:e3:ce:3b:1f:56:6a:8f:ff:2d:f0:2f:bc:86:5c:fd:c1:85:
-         7b:9f:81:e8:09:de:71:e1:a7:b5:0a:cb:1b:8c:9e:b0:c0:52:
-         a8:6f:50:54:b3:a9:da:37:1a:2d:07:88:09:b6:95:b4:bb:8c:
-         55:18:50:e9:07:0b:54:c1:e4:16:9b:27:31:d7:5e:b7:e4:94:
-         0c:75:32:77:4b:1b:26:ed:f6:b2:71:16:f3:44:f4:8f:df:3b:
-         ae:a7:25:69:c3:41:3d:c5:46:7b:f3:c2:bf:00:90:7a:2b:53:
-         17:50:5a:25:03:78:15:be:54:f8:0d:39:ce:d8:f6:3b:fe:98:
-         28:06:7e:c5:03:c4:7c:ed:77:8a:f2:8a:25:c4:09:a0:60:99:
-         e7:f1:91:04:d3:c6:4e:94:37:f4:5e:90:20:41:a8:67:07:1d:
-         27:ed:33:b2:87:6f:24:ad:5e:24:dd:3b:78:16:02:d9:cc:95:
-         de:bc:a2:a3
+         5a:db:a4:96:1a:ae:43:aa:69:c4:b3:05:46:c0:db:32:da:8b:
+         d8:18:f3:e1:91:73:86:f0:4b:8d:41:ac:8d:23:9e:fa:eb:29:
+         23:9e:99:a7:2e:72:c3:f3:bd:ea:02:ad:f1:14:80:23:fb:2a:
+         c4:46:15:a0:66:d9:01:7e:f2:d5:a8:50:0f:2c:a2:bb:71:fe:
+         4e:66:4f:45:f2:b2:c5:4a:91:33:66:16:48:33:96:11:14:3b:
+         b4:69:76:87:b9:24:da:31:de:42:23:da:54:3d:d3:b9:f0:9a:
+         35:9f:90:98:a8:08:66:a3:af:77:c1:a2:d3:4c:39:0b:00:a5:
+         72:c9:2d:bb:da:9c:a3:8b:d5:e2:c9:f6:66:9e:40:08:36:ac:
+         31:e1:d3:31:5b:dd:90:f1:e4:34:ba:35:09:40:07:c7:e8:0a:
+         08:d4:11:79:1e:0f:72:8d:46:74:4a:71:4b:c0:57:01:a7:b8:
+         35:c8:a0:c8:bc:28:5b:53:41:75:0a:e0:b5:cf:a3:cc:d7:a0:
+         9c:6a:0d:83:0f:ec:34:23:d7:36:2d:d4:a3:66:20:95:a1:ad:
+         75:01:6a:c7:76:58:f3:da:d7:d1:9f:b9:04:41:75:63:0f:89:
+         16:d9:2a:45:a2:19:76:df:0c:30:8b:8b:13:7c:54:13:04:c5:
+         70:49:88:ec
 -----BEGIN CERTIFICATE-----
 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
-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
+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
-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
+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
-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
+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
-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
-vKKj
+UlNBMSEwHwYJKoZIhvcNAQkBFhJtZUBteWhvc3QubXlkb21haW6CCQC8yhrNoOIv
+pDATBgNVHSUEDDAKBggrBgEFBQcDAjALBgNVHQ8EBAMCB4AwGgYDVR0RBBMwEYIP
+VlBOX3Rlc3RfY2xpZW50MA0GCSqGSIb3DQEBCwUAA4IBAQBa26SWGq5DqmnEswVG
+wNsy2ovYGPPhkXOG8EuNQayNI5766ykjnpmnLnLD873qAq3xFIAj+yrERhWgZtkB
+fvLVqFAPLKK7cf5OZk9F8rLFSpEzZhZIM5YRFDu0aXaHuSTaMd5CI9pUPdO58Jo1
+n5CYqAhmo693waLTTDkLAKVyyS272pyji9XiyfZmnkAINqwx4dMxW92Q8eQ0ujUJ
+QAfH6AoI1BF5Hg9yjUZ0SnFLwFcBp7g1yKDIvChbU0F1CuC1z6PM16Ccag2DD+w0
+I9c2LdSjZiCVoa11AWrHdljz2tfRn7kEQXVjD4kW2SpFohl23wwwi4sTfFQTBMVw
+SYjs
 -----END CERTIFICATE-----
